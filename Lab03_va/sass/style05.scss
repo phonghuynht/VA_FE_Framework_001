@@ -1,0 +1,12 @@
+@use 'base';
+
+%color-palette {
+    background-color: base.$light-red;
+    color: base.$font-color;
+}
+
+nav {
+    @extend %color-palette;
+    width: 300px;
+    height: 200px;
+}

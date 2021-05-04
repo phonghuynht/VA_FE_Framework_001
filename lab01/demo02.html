@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- tiếng việt, tiếng trung.. -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- hiển thị wed tu động tren các thiết bị  -->
+    <title>Document</title>
+    <link rel="icon" href="/img/favicon.ico">
+</head>
+<body>
+    <h1>demo 02</h1>
+    <div>
+        <ul>
+            <li>item 1</li>
+            <li class="red">item 2</li>
+            <li>item 3</li>
+            <li>item 4</li>
+            <li>item 5</li>
+            <li>item 6</li>
+            <li>
+                <div>DIV element insite LI</div>
+            </li>
+            
+        
+        </ul>
+    </div>
+    <div id="idBlue">Blue item</div>
+    <div class="red">This is class RED</div>
+    <section class="red">this is Footer</section>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('li').css('border','1px solid #cc3366');
+            $('.red').css('background-color','#6633cc');
+            $('#idBlue').css('border','1px solid #66cc33');
+            $('section.red').css('background-color','#3366cc');
+            $('.red,#idBlue').css('margin','5px');
+            $('li div').css('background-color','#33cc66');
+
+            $('li').odd().css('background-color','#88cc99');
+            // var nodeLi = $('li');
+            // console.log(nodeLi);
+            // console.log($('div'));
+        });
+    </script>
+</body>
+</html>

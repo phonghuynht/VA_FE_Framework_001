@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- tiếng việt, tiếng trung.. -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- hiển thị wed tu động tren các thiết bị  -->
+    <title>Document</title>
+    <link rel="icon" href="/img/favicon.ico">
+    <style type="text/css">
+       div{
+            width: 300px;
+            height: 200px ;
+            background-color: #cc3366;
+            color: #fff;
+            text-align: center;
+            line-height: 200px;
+            font-size: 20pt;
+       }
+    </style>
+</head>
+<body>
+    <h1>demo 03</h1>
+    <div>
+        This is content
+    </div>
+    <button type="button" class="show">show</button>
+    <button type="button" class="hide">hide</button>
+    <button type="button" class="FadeIn">FadeIn</button>
+    <button type="button" class="FadeOut">FadeOut</button>
+    <button type="button" class="Toggle">Toggle</button>
+   
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+           $('.show').click(function(){
+               $('div').show(200);
+           });
+           $('.hide').click(function(){
+               $('div').hide(500);
+           });
+           $('.FadeIn').click(function(){
+               $('div').fadeIn(300, function(){
+                   $('div').append('<p style ="color:black;">Item</p>')
+               });
+           });
+           $('.FadeOut').click(function(){
+               $('div').fadeOut(800);
+           });
+           $('.Toggle').click(function(){
+               $('div').toggle(500, function(){
+                //    console.log("DONE");
+                $('div').text('DONE')
+               });
+           });
+        });
+    </script>
+</body>
+</html>

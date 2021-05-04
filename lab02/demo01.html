@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Demo 01</h1>
+    <button type="button" class="btnAddNew">Add New</button>
+    <button type="button" class="btnDelete">Delete</button>
+    <button type="button" class="btnDeleteAll">Delete All</button>
+
+    <ul id="lst"></ul>
+    
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript">
+       $(document).ready(function(){
+           var no = 1
+          $(".btnAddNew").click(function(){
+        //    console.log("Add New");
+            var liNode =$("<li></li>");
+            // var textNode = document.createTextNode("Item");
+            liNode.text((no++) + "Item");
+            $("#lst").append(liNode);
+            // var ulNode = $("#lst");
+            ulNode.append(liNode);
+            no = 1;
+          });
+
+          $(".btnDelete").click(function(){
+        //    console.log("Delete");
+              $("#lst").children().last().remove();
+              no --;
+          });
+
+          $(".btnDeleteAll").click(function(){
+        //    console.log("Delete All");
+              $("#lst").empty()
+              no = 1;
+          });
+       });
+    </script>
+</body>
+</html>

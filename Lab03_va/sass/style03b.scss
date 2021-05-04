@@ -1,0 +1,6 @@
+@use 'style01';
+
+nav {
+    background-color: style01.$font-color;
+    color: style01.$light-red;
+}
