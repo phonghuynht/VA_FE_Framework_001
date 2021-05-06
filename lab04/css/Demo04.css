@@ -1,0 +1,22 @@
+.area-1{background-color:#000 ;
+        color: #fff;
+        height: 40px;
+        padding: 8px 0;
+}
+.area-2{background-color:#fff;
+        text-align: center;
+        padding: 50px 0;
+}
+.area-3{background-color:#f7f8f9;}
+.area-3 .col{
+       box-shadow: 5px 5px 5px 0px #94969a;
+       border:1px solid #94969a;
+       margin: 5px;
+       padding: 0;
+}
+.area-3 .col p, .area-3 .col button{
+      margin: 10px;
+}
+.Thumnail{background-color: #000;
+          height: 200px;
+}
