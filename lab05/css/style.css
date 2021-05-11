@@ -1,0 +1,75 @@
+body{
+    font-family: 'Noto Sans JP', sans-serif;
+}
+
+header{
+    height: 890px;
+    background-image: url('../img/bg-masthead.jpg');
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.header-title{
+    font-weight: 700; 
+    font-size: 56px;
+}
+.header-sub{
+    font-weight: 300;
+    font-size:26px ;
+    font-style: italic;
+}
+header a{
+    background-color:#1d809f !important;
+    border-color:#1d809f !important;
+    color: #fff;
+    width: 200px !important;
+}
+.section-about{
+    height: 600px;
+}
+.section-about h3{
+    font-size: 28pt;
+    font-weight: 700;
+}
+.section-about h4{
+    font-weight: 300;
+    font-size: 16pt;
+}
+.section-services{
+    background-color: #1d809f;
+    height: 600px;
+    color: #fff;
+}
+.section-services .mb-1{
+    color: #ecb807;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.section-services .mb-5{
+    font-weight: 700;
+    font-size: 36px;
+}
+.services-icon{
+    background-color: #fff;
+    width: 100px;
+    height: 100px;
+    display: block;
+    margin: auto;
+    color:#1d809f;
+    line-height: 100px;
+
+}
+.services-icon svg{
+   width: 50px;
+   height: 50px;
+}
+.section-services .mb-3{
+    margin-top: 20px !important;
+    font-size: 28px;
+    font-weight: 700;
+}
+.section-services .mb-4{
+    font-size: 12pt;
+    font-weight: 400;
+}
